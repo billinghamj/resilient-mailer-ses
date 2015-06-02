@@ -23,6 +23,7 @@
 	},
 
 	"devDependencies": {
+		"coveralls": "^2.11.2",
 		"tape": "^4.0.0",
 		"istanbul": "^0.3.14"
 	}

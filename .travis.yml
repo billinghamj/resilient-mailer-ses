@@ -1,11 +1,11 @@
 language: node_js
 script: npm run-script test-travis
-after_script: npm install coveralls@2.10.0 && cat ./coverage/lcov.info | coveralls
+after_script: cat ./coverage/lcov.info | coveralls
 
 notifications:
   email: false
   slack:
     rooms:
-      - secure: fOlTK5hKs3Cv3wJCn85tCQEjsZIhz6FRlf/mNR41Hp3g8ljPvJO9Ls67t1tV2gOVwNbzTd5NUTfK4qmWhYyYmvkzTG1j6IJXJ/zkz2CvvoiCZu/7ECHFGeyvvCKjrhETrkTs6eYjPBIAGBL6qNGD9Bv9gUlDjQyx2Yv45e+n2pI=
+      - secure: WAsa+GdZZmh5i30hDBetyKCe+5U5ZsvJyM6J7GgkKvymPFwgcjr0arLS2sG+AQkFNl1i+q7fS5F76MOx+N4wb/56PJ0HCVk+A5H4PuRgsfeo7lhaLDDJ8MAkaErOPCfqIuAPAt07HaNPXYek1g66M9InGZfPO6nz1G3M9u6oQrUGlCReF4SELcx/Gdbe4byzft89CTzxPCt8GLm5hj96roCxlQoc9W2HQQiEJ6iN6OrIbjNhmFEUESdKtruyfEbRcJjzSx25B2ZgGvwXov7m+rOEFUdp20auwgRt6DezJNoC2jW0UQm77Plu0+naZfr03Al9UcZ80QGLb1AeQEaGbALJk6eAx67rZrK2TYNM5lPpSK5MAPEdWoDbgGWnN/jd98T2Fpu9YX+/CYQSASAdQgdS1AdyR6FFVVxL5/FNO0jFkcjLixe8gXtKmJr/It97HeW+IpAgVdIvYikzhWtrpRS1EyiVGW2y4IpJrStUNGKZErgMNEbfrgCweAdZ/vajXuCkzngBzYf94KI5jgkj9oXDdasOF5GaHZeOhfCD4HjDCK6DAAxFypIW+xyseUoCg1rl2w/7cOo+5ponyObDHESh1VJHPMEAKRBpLWKH71m1klaL5jhtFIhdFbcRbW0fyOV5RmPiTZAhKTqPTBywCk7+NFqi52cBujAOdtkVV1A=
     on_success: always
     on_failure: always
